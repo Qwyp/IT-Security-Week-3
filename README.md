@@ -11,10 +11,10 @@ To run the Application, several steps are needed. A closer look is provided in t
 3. Also This
 
 ## Languages
-*PHP
-*JavaScript
-*Node.js
-*HTML
+* PHP
+* JavaScript
+* Node.js
+* HTML
 
 ## Authors
 
