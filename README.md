@@ -1,28 +1,11 @@
 # About
-The folder Web Application contains all the programm code for task number 4: Web Security in Practise 
-## About Task Nr. 4
-Development of a small web-application, written in PHP, JavaScript and HTML,
-which is vulnerable to Cross Side Scripting and SQL Injection.
-
-To run the Application, several steps are needed. A closer look is provided in the report for week 3.
-
-1. This 
-2. This
-3. Also This
-
-## Languages
-* PHP
-* JavaScript
-* Node.js
-* HTML
-
+This repository contains the tasks (2) and (4) for the task submission in week three.<br> 
+**Exercise 2 Reflected Cross Side Scripting** folder contains all source code for task number two. <br>
+**Exercise 4 Web Security in Practise** folder contains all source code for task number four. <br>
 ## Authors
-
-Ashkan Es Haghi 
-
-Alexander Grissinger
-
-Muddassir Hussain
+Ashkan Es Haghi <br>
+Alexander Grissinger <br>
+Muddassir Hussain <br>
 
 ## Project Date
 08.11.2019
