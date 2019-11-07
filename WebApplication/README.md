@@ -11,9 +11,9 @@ which is vulnerable to Cross Side Scripting and SQL Injection.
 * HTML
 
 ## Authors
-Ashkan Es Haghi 
-Alexander Grissinger
-Muddassir Hussain
+Ashkan Es Haghi <br>
+Alexander Grissinger <br>
+Muddassir Hussain <br>
 
 ## Sources
 * 
