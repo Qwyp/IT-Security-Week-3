@@ -12,7 +12,7 @@ If you have Xampp already installed you don't need to install MYSQL
 
 ## Executable Injections/ XSS Attack Example
 
-```
+```javascript
 k%" UNION SELECT * FROM users ;--
 
 %" ;--
