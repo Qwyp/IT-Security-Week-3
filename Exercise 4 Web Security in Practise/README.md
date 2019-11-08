@@ -8,19 +8,19 @@ which is vulnerable to Cross Site Scripting and SQL Injection.
 
 If you have Xampp already installed you don't need to install MYSQL
 
+### Make the page less vulnerable to SQL injection and XSS
+
+
 ## Languages
 * PHP
 * JavaScript
-* HTML
+* HTML/CSS
+* Python
 
 ## Authors
 Ashkan Es Haghi <br>
 Alexander Grissinger <br>
 Muddassir Hussain <br>
-
-## Sources
-* 
-* 
 
 ## Project Date
 08.11.2019
