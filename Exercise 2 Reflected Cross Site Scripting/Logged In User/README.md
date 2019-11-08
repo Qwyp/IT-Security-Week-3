@@ -7,7 +7,7 @@ https://demo.testfire.net/<br>
 # Execution
 ## Note:
 Below is the script, execute this on any input form eg (Search, feedback) of the given website.
-You must have local server setup, here it is node server localhost:30000. code is uploaded clone it and run on your system.
+You must have local server setup, here it is node server localhost:3000. code is uploaded clone it and run on your system.
 
 # Authors
 
