@@ -1,8 +1,10 @@
 <?PHP
 include('../inc/conf.php');
 
-if (!empty($_GET['item'])){
-	$sql ='SELECT product_name, price, amount FROM products WHERE `product_name` like "%'.$_GET['item'].'%"';
+
+$item = addslashes($_GET['item']);
+if (!empty($item)){
+	$sql ='SELECT product_name, price, amount FROM products WHERE `product_name` like "%'.$item.'%"';
 	$result = $conn->query($sql);
 	}
 
@@ -13,12 +15,10 @@ if (!empty($_GET['item'])){
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>My Web App</title>
 </head>
-<script src="resources/action.js" ></script>
+<script src="../resources/action.js" ></script>
 <style type="text/css">
-#login{width:100px;height:21px;float:left;background:url(images/login.jpg) bottom no-repeat;visibility:hidden;margin-left:50px;margin-top:14px;position:absolute;}
-#login:hover{width:100px;height:21px;float:left;background:url(images/login.jpg) top no-repeat;visibility:visible;margin-left:50px;margin-top:14px;cursor:pointer;}
-#signup{width:100px;height:21px;float:left;background:url(images/Signup.jpg) bottom no-repeat;visibility:visible;margin-left:50px;margin-top:14px;position:absolute;}
-#signup:hover{width:100px;height:21px;float:left;background:url(images/Signup.jpg) top no-repeat;visibility:visible;margin-left:50px;margin-top:14px;cursor:pointer;}
+#logout{width:100px;height:46px;float:left;background:url(../images/logout.jpg) bottom no-repeat;visibility:visible;margin-left:50px;margin-top:12px;position:absolute;}
+#logout:hover{width:100px;height:46px;float:left;background:url(../images/logout.jpg) top no-repeat;visibility:visible;margin-left:50px;margin-top:12px;cursor:pointer;}
 #searchcontent{width:1000px;float:left;}
 #resultcontent{width:1000px;float:left;}
 #searchtable{float:left;direction:ltr;visibility:visible;margin-left: 40px;}
@@ -30,8 +30,7 @@ if (!empty($_GET['item'])){
 <div id="logo" style="width:1000px;height:70px;float:left;border-bottom:5px solid #00bab9;">
 	<div style="width:800px;height:70px;float:left;"><p style="margin-left:130px;height:30px;margin-top:20px;font:bolder 'B Titr';">My Web APP</p></div>
 	<div style="width:200px;height:70px;float:left;">
-		<div id="signup" style="" onclick="signup();"></div>
-		<div id="login" style="" onclick="login()"></div>
+		<div id="logout" style="" ><a href="logout.php" target="_self" style="width:100px;height:46px;display:block;margin:auto;"></a></div>
     </div>
 </div>
 <div id="searchcontent" style="">
@@ -43,24 +42,24 @@ if (!empty($_GET['item'])){
 			  <td width="170"><input type="submit" value="Search" style="width: 130px;margin-left: 10px;border-radius: 18px;border: 1px solid gray;" /></td>
 			</tr>
 			<?PHP
-			if(empty($_GET['item'])):
+			if(empty($item)):
 			?>
 			<tr>
 			  <td width="244" style="text-align: right;"></td>
 			  <td width="492"></td>
 			  
-			  <td style="text-align: left;"><?=$_GET['item']?></td>
+			  <td style="text-align: left;"><?=$item?></td>
 		    </tr>
 		    <?PHP
 			  endif;
 			  ?>
 			<?PHP
-			if(!empty($_GET['item'])):
+			if(!empty($item)):
 			?>
 			<tr>
 			  <td width="244" style="text-align: right;">You Searched For :</td>
 			  <td width="492"><span style="text-align: left;padding-left: 15px;font-weight: bolder;">
-			    <?=$_GET['item']?>
+			    <?=$item?>
 			  </span></td>
 			  
 			  <td style="text-align: left;">&nbsp;</td>
@@ -74,7 +73,7 @@ if (!empty($_GET['item'])){
 </div>
 <div id="resultcontent" style="">
 	<?PHP
-	if(!empty($_GET['item'])):
+	if(!empty($item)):
 	?>
 	<table width="800" border="1" id="searchresulttable" align="center">
 	  <tbody>
