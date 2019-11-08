@@ -1,5 +1,5 @@
 # About
-Development of a small web-application, written in PHP, JavaScript and HTML, CSS and Python
+Development of a small web-application, written in PHP, JavaScript, HTML, CSS and Python
 which is vulnerable to Cross Site Scripting and SQL Injection.
 
 **commands to run before execution:** <br>
