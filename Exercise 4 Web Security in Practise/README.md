@@ -20,6 +20,18 @@ k%" UNION SELECT * FROM users ;--
 <script> alert('XSS'); </script>
 ```
 
+## Close the SQL-Injection vulnerability
+```javascript
+<?PHP
+include('../inc/conf.php');
+$item = addslashes($_GET['item']);
+if (!empty($item)){
+	$sql ='SELECT product_name, price, amount FROM products WHERE `product_name` like "%'.$item.'%"';
+	$result = $conn->query($sql);
+	}
+?>
+```
+
 ## Languages
 * PHP
 * JavaScript
