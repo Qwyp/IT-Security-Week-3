@@ -2,11 +2,11 @@
 Development of a small web-application, written in PHP, JavaScript and HTML,
 which is vulnerable to Cross Site Scripting and SQL Injection.
 
-commands to run before execution <br>
+**commands to run before execution:** <br>
 pip install pymysql <br>
 pip install php
 
-If you have Xampp already installed you don't need to instal MYSQL
+If you have Xampp already installed you don't need to install MYSQL
 
 ## Languages
 * PHP
