@@ -4,7 +4,7 @@ This is done on a website which is made intentionally vulnerable.
 https://demo.testfire.net/<br>
 **This is only for learning purposes.**
 ## Note:
-Below is the script, execute this on any input form eg (Search, feedback) of the given website.
+Below is the script, execute this on any input form eg (Search, feedback, transaction form) of the given website.
 You must have local server setup, here it is node server localhost:3000. code is uploaded clone it and run on your system.
 
 Here we are getting user's money transfer information by using fake transfer form which users would not be able notice and they will transfer money to the accounts and all those transfer details are sent to the local server of the attacker.
