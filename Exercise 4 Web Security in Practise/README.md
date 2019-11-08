@@ -8,8 +8,17 @@ which is vulnerable to Cross Site Scripting and SQL Injection.
 
 If you have Xampp already installed you don't need to install MYSQL
 
-### Make the page less vulnerable to SQL injection and XSS
+## Execution
 
+## Executable Injections/ XSS Attack Example
+
+```
+k%" UNION SELECT * FROM users ;--
+
+%" ;--
+
+<script> alert('XSS'); </script>
+```
 
 ## Languages
 * PHP
